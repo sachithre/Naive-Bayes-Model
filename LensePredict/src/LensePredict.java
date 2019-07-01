@@ -1,7 +1,5 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-
 import weka.classifiers.bayes.NaiveBayes;
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -10,7 +8,7 @@ import weka.core.Instances;
 public class LensePredict {
 
 	public static void main(String[] args) throws Exception {
-		FileReader reader = new FileReader("C:\\Users\\Sachithre\\eclipse-workspace\\LensePredict\\src\\lense.arff"); // read the dataset file
+		FileReader reader = new FileReader("C:\\Users\\Sachithre\\eclipse-workspace\\lense.arff"); // Location of the arff File
 		Instances instance_train = new Instances(reader); //create an instance
 		BufferedReader fi = new BufferedReader(reader); //read the file and pass data to buffer
 		fi.close(); // file close

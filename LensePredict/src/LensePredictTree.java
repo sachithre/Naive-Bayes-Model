@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-
 import weka.classifiers.trees.J48;
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -10,7 +7,7 @@ import weka.core.Instances;
 public class LensePredictTree {
 
 	public static void main(String[] args) throws Exception {
-		FileReader reader = new FileReader("C:/Users/cst15029/Desktop/Lenses.arff"); // read the dataset file
+		FileReader reader = new FileReader("C:/Users/cst15029/Desktop/Lenses.arff"); // Location of the arff File
 		Instances instance_train = new Instances(reader); //create an instance
 		instance_train.setClassIndex(4);
 
