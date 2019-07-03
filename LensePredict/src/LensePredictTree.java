@@ -7,7 +7,7 @@ import weka.core.Instances;
 public class LensePredictTree {
 
 	public static void main(String[] args) throws Exception {
-		FileReader reader = new FileReader("C:/Users/cst15029/Desktop/Lenses.arff"); // Location of the arff File
+		FileReader reader = new FileReader("C:\\Users\\Sachithre\\eclipse-workspace\\lense.arff"); // Location of the arff File
 		Instances instance_train = new Instances(reader); //create an instance
 		instance_train.setClassIndex(4);
 
